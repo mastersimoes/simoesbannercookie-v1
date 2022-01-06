@@ -71,7 +71,6 @@ class SimoesBannerCookie extends Module
 
     public function HookDisplayFooter()
     {
-        $this->context->controller->registerJavascript('simoes-cookie', 'modules/simoesbannercookie/simoesbannercookie.js', ['position' => 'bottom', 'priority' => 160]);
         return $this->display(__FILE__, 'banner.tpl');
         
     }
